@@ -10,8 +10,8 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: gha.srspvno.mongodb.net
-      MONGODB_USERNAME: daoxuanlong492004_db_user
-      MONGODB_PASSWORD: HG3bbOFkXkIdtYVF
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }} 
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }} 
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
